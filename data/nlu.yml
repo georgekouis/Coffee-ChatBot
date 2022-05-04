@@ -1,0 +1,23 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Καλησπέρα
+    - Γειά
+    - Καλημέρα
+
+- intent: coffee_team
+  examples: |
+    - Φραπομάδα
+    - φραπομάδα
+
+- intent: coffee_history
+  examples: |
+    - Η ιστορία του Καφέ
+    - η ιστορία του καφέ
+
+- intent: coffee_information
+  examples: |
+    - Πληροφορίες
+    - πληροφορίες

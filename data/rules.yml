@@ -1,0 +1,28 @@
+version: "3.0"
+
+rules:
+# simple fallback
+- rule: Implementation of the simple-Fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
+- rule: Greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Coffee team
+  steps:
+  - intent: coffee_team
+  - action: utter_coffee_team
+
+- rule: Coffee Information
+  steps:
+  - intent: coffee_information
+  - action: utter_coffee_information
+
+- rule: Coffee History
+  steps:
+  - intent: coffee_history
+  - action: utter_coffee_history
