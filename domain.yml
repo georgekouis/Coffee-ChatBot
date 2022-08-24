@@ -1,48 +1,13 @@
-version: '3.0'
+version: '2.0'
+config:
+  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-
-intents:
-- greet
-- coffee_team
-- coffee_history
-- coffee_information
-
-responses:
-  utter_greet:
-  - text: "Καλωσορίσατε! Είμαι η Φραπεδούπολη! Τι θα θέλατε να μάθετε;"
-    buttons:
-    - title: "Φραπομάδα"
-      payload: "/coffee_team"
-    - title: "Η ιστορία του Καφέ"
-      payload: "/coffee_history"
-    - title: "Πληροφορίες"
-      payload: "/coffee_information"
-  
-  utter_coffee_team:
-  - text: "Η φραπομάδα μας αποτελείται από έμπειρους καφέδες της Καφεδοχώρας.<br>Οτι μας ζητήσετε, εμείς θα το κάνουμε πράξη"
-    buttons:
-    - title: "Η ιστορία του Καφέ"
-      payload: "/coffee_history"
-    - title: "Πληροφορίες"
-      payload: "/coffee_information"
-  
-  utter_coffee_history:
-  - text: "Η ιστορία του καφέ χρονολογείται από την παλιά προφορική παράδοση αιώνων στη σύγχρονη Αιθιοπία, ωστόσο δεν έχουν βρεθεί ούτε ο τόπος που καλλιεργήθηκε για πρώτη φορά ο καφές ούτε άμεσες αποδείξεις της κατανάλωσής του πριν από τον 15ο αιώνα. Τα μοναστήρια των Σούφι στην Υεμένη χρησιμοποιούσαν τον καφέ ως βοήθημα για τη συγκέντρωση κατά τη διάρκεια της προσευχής. Περισσότερα μπορείτε να μάθετε <a href='https://en.wikipedia.org/wiki/History_of_coffee#Production'>εδώ</a>."
-    buttons:
-    - title: "Φραπομάδα"
-      payload: "/coffee_team"
-    - title: "Πληροφορίες"
-      payload: "/coffee_information"
-  
-  utter_coffee_information:
-  - text: "Στους φραπεδόνιους μανατζέρ μας θα μπορείτε να ζητήσετε ότι θέλετε."
-    buttons:
-    - title: "Φραπομάδα"
-      payload: "/coffee_team"
-    - title: "Η ιστορία του Καφέ"
-      payload: "/coffee_history"
-
-  utter_please_rephrase:
-  - text: Λυπάμαι, κάτι πήγε λάθος.
+intents: []
+entities: []
+slots: {}
+responses: {}
+actions: []
+forms: {}
+e2e_actions: []
